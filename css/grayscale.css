@@ -108,27 +108,62 @@ a:focus {
     margin-right:-20%;
     float:right;
 }
+.subnav-custom{
+    margin-top: -50px;
+    color: #000;
+    background-color: #fff;
+}
+.subnav-custom a{
+    color: #555555;
+    /*font-size: 30px;*/
+    font-weight: bold;
+    background-color: #fff;
+}
+.subnav-custom a:focus{
+    color: #000;
+    /*font-size: 30px;*/
+    font-weight: bold;
+    background-color: #fff;
+}
+.subnav-custom a:active{
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-color: #fff;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     /*max-height: 20px;*/
     border-radius: 0px;
     border-width: 0px;
-    /*margin-top: 10px;*/
+    margin-top: 10px;
+    position: relative;
+    /*padding-top: 100px;*/
     /*border-bottom: 1px solid rgba(255,255,255,.3);*/
     /*text-transform: uppercase;*/
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family: 'Open Sans';
-    background-color: #BEBBBB;
+    /*background-color: #232C3C;*/
+    /*padding-top: 100px;*/
+    background-color: transparent;
+
+    color: #fff;
+    /*width: 98.5%;*/
 
 }
 
 .navbar-custom .navbar-brand {
     /*margin-top: 20px;*/
     font-weight: 700;
+    color: #fff;
 }
-
+.topHeader{
+    position: top;
+}
 .navbar-custom .navbar-brand:focus {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     outline: 0;
 
 }
@@ -139,7 +174,6 @@ a:focus {
     color: #fff;
 
 }
-
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
@@ -154,6 +188,7 @@ a:focus {
 .navbar-custom .nav li a {
     font-size: 14px;
     font-weight: bold;
+    color: #fff;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -176,9 +211,9 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom .nav li.active a {
+/*.navbar-custom .nav li.active a {
     background-color: rgba(255,255,255,.3);
-}
+}*/
 
 .navbar-custom .nav li.active a:hover {
     color: #fff;
@@ -207,14 +242,14 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    /*height: auto;*/
+    height: 100%;
     max-height: 500px;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background: url(../img/bg.png) no-repeat bottom center scroll;
-    background-color: #BEBBBB;
+    background: url(../img/landing.png) no-repeat bottom center scroll;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -223,9 +258,15 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
+    position: relative;
+
     vertical-align: middle;
 }
+.introContent{
+    padding-top: 100px;
+    background-color: transparent;
 
+}
 .intro .intro-body .brand-heading {
     font-size: 40px;
 }
@@ -267,7 +308,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #000;
     background: rgba(255,255,255,.1);
 }
 
@@ -332,7 +373,7 @@ a:focus {
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0px;
     color: #fff;
     /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
     background: url(../img/dark.png) no-repeat center center scroll;
@@ -342,7 +383,32 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
-
+.myfooter{
+    width: 100%;
+    background-color: #3C3C3C;
+    /*background: url(../img/dark.png) no-repeat center center scroll;*/
+}
+.block{
+    /*<img src="img/bg3.png" width="100%" height="120%">*/
+    background-image: "../img/bg3.png";
+    /*width="100%"; height="120%";*/
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-top: 5%;
+}
+.footer-section {
+/*    width: 100%;
+    padding: 50px 0;
+*/    color: #fff;
+    background-color: #3C3C3C;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 #map {
     width: 100%;
     height: 200px;
@@ -363,6 +429,7 @@ a:focus {
         margin-top: 250px;
     }
 }
+
 .forlawyers{
     background-color: transparent;
     border-style: solid;
@@ -381,7 +448,7 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #fff;
+    border: 3px solid #fff;
     color: #fff;
     background-color: transparent;
 }

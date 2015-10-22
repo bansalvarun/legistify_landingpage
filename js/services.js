@@ -4,9 +4,7 @@ $(document).ready(function(){
 	  $( "#ourServices" ).attr( "style","display:none" );
 	  $( "#findLawyersBlock2" ).attr( "style","display:block" );
 	  $( "#findLawyersBlock1" ).attr( "style","display:none" );
-
 	});
-	
 	$( "#findLawyersBlock" ).mouseout(function() {
 	  $( "#findLawyers" ).attr( "style","display:none" );
 	  $( "#ourServices" ).attr( "style","display:block" );
