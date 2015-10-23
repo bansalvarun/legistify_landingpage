@@ -127,39 +127,40 @@
             </div>
 
             <div class = col-md-1 style="float:center" ></div>
-            <div class = col-md-2 style="float:center" id="makeDocumentsBlock">
+            <div class = col-md-2 style="float:left" id="makeDocumentsBlock">
                 <div id="makeDocumentsBlock1" style="display:block">
                     <img src="img/docs.png" width="100%" height="100%">
                     <p><span class="make" >Make</span><br/><span class="superdark">DOCUMENTS</span></p>
                 </div>
                 <div id="makeDocumentsBlock2" style="display:none">
-                    <img src="img/bg3.png" width="100%" height="100%">
-                    <p style="visibility:hidden"><span class="make" >Click to Make</span><br/><span class="superdark">DOCUMENTS</span></p>
+                	<button class="btn btn-default getstarted">Get started</button>
+                    <img src="img/getstarted.png" width="100%" height="100%">
+                    <p style="background:#3C3C3C"><span class="make" ></span><br/><span class="superdark" style="visibility:hidden">afaf</span></p>
                 </div>
             </div>
 
             <div class = col-md-1 style="float:center" ></div>        
-            <div class = col-md-2 style="float:center" id="startResearchBlock">
+            <div class = col-md-2 style="float:left" id="startResearchBlock">
 	            <div id="startResearchBlock1" style="display:block">
-	                <img src="img/research.png" width="100%" height="100%">
+	                <img src="img/research.png"  width="100%" height="100%">
 	                <p><span class="make">Start</span><br/><span class="superdark">RESEARCH</span></p>
 	            </div>
 	            <div id="startResearchBlock2" style="display:none">
-	                <img src="img/bg3.png" width="100%" height="100%">
-	                <p style="visibility:hidden"><span class="make">Click</span><br/><span class="superdark">To Start</span></p>
+                	<button class="btn btn-default getstarted">Get started</button>
+                    <img src="img/getstarted.png" width="100%" height="100%">
+                    <p style="background:#3C3C3C"><span class="make" ></span><br/><span class="superdark" style="visibility:hidden">afaf</span></p>
 	            </div>
             </div>
             <div class = col-md-1 style="float:center" ></div>
-            <div class = col-md-2 style="float:center;" id="findLawyersBlock">
+            <div class = col-md-2 style="float:left;" id="findLawyersBlock">
                 <div id="findLawyersBlock1" style="display:block">
                     <img src="img/lawyers.png" width="100%" height="100%">
                     <p><span class="make">Find</span><br/><span class="superdark">LAWYERS</span></p>
                 </div>
-                <div id="findLawyersBlock2" style="display:none">
-                    <div class="block">
-                    <img src="img/bg3.png" width="100%" height="100%">
-                    </div>
-                    <p style="visibility:hidden"><span class="make">Get</span><br/><span class="superdark">LAWYERS</span></p>
+                <div id="findLawyersBlock2" style="display:none" align="middle">
+                	<button class="btn btn-default getstarted">Get started</button>
+                    <img src="img/getstarted.png" width="100%" height="100%">
+                    <p style="background:#3C3C3C"><span class="make" ></span><br/><span class="superdark" style="visibility:hidden">afaf</span></p>
                 </div>
             </div>
 
@@ -298,16 +299,15 @@
 
 <div class="owl-controls clickable" >
     <div class="owl-pagination" >
-        <span class="owl-page active" data-target="#carousel-example-generic" data-slide-to="0" >
-                <img src="img/bg.png"  width="30px" height="4px" >
+        <span class="owl-page " onclick="changeActivePag(1)" data-target="#carousel-example-generic" data-slide-to="0" >
+                <img id="pag1" src="img/active.png"  width="30px" height="4px" >
         </span>
-        <span class="owl-page" data-target="#carousel-example-generic" data-slide-to="1">
-                <img src="img/bg.png"  width="30px" height="4px" >
+        <span class="owl-page " onclick="changeActivePag(2)" data-target="#carousel-example-generic" data-slide-to="1">
+                <img id="pag2" src="img/inactive.png"   width="30px" height="4px" >
         </span>
-        <span class="owl-page" data-target="#carousel-example-generic" data-slide-to="2">
-                <img src="img/bg.png"  width="30px" height="4px" >
+        <span class="owl-page" onclick="changeActivePag(3)" data-target="#carousel-example-generic" data-slide-to="2">
+                <img id="pag3" src="img/inactive.png"   width="30px" height="4px" >
         </span>
-
     </div>
 </div>
 
@@ -373,11 +373,10 @@
                     </ul>
                 </div>
             </div>  
-            <div>
-                <img src="img/bg.png" width="250%" height="1px" style="margin-left:-200px">
-            </div>
-            <div class="col-md-6" style="text-align:left;margin-left:0px">
-            <p style="font-size:12px">Copyright 2014  All rights registered by Legistify</p>
+            
+            <HR WIDTH="100%" >
+            <div class="col-md-6" style="text-align:left;padding-left:0px; margin-left:0px">
+	            <p style="font-size:12px;margin-left:0px">Copyright 2014  All rights registered by Legistify</p>
             <br/>
             </div>
             <div class="col-md-6">
