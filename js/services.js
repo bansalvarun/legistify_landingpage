@@ -30,38 +30,50 @@ $(document).ready(function(){
 	//   $( "#findLawyersBlock2" ).attr( "style","display:none" );
 	// });
 	$( "#findLawyersBlock" ).hover(function() {
-	  $( "#findLawyers" ).attr( "style","display:block" );
-	  $( "#ourServices" ).attr( "style","display:none" );
+	  if(s>500){
+		  $( "#findLawyers" ).attr( "style","display:block" );
+		  $( "#ourServices" ).attr( "style","display:none" );
+	  }
 	  $( "#findLawyersBlock2" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 1000);
 	  $( "#findLawyersBlock1" ).attr( "style","display:none" );
 	},function(){
-	  $( "#findLawyers" ).attr( "style","display:none" );
-	  $( "#ourServices" ).attr( "style","display:block" );
+	  if(s>500){
+		  $( "#findLawyers" ).attr( "style","display:none" );
+		  $( "#ourServices" ).attr( "style","display:block" );
+	  }
 	  $( "#findLawyersBlock1" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 1000);
 	  $( "#findLawyersBlock2" ).attr( "style","display:none" );
 	});
 
 
 	$( "#makeDocumentsBlock" ).hover(function() {
-	  $( "#makeDocuments" ).attr( "style","display:block" );
-	  $( "#ourServices" ).attr( "style","display:none" );
+	  if(s>500){		
+		  $( "#makeDocuments" ).attr( "style","display:block" );
+		  $( "#ourServices" ).attr( "style","display:none" );
+	  }
 	  $( "#makeDocumentsBlock2" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 1000);
 	  $( "#makeDocumentsBlock1" ).attr( "style","display:none" );
 	 },function() {
-	  $( "#makeDocuments" ).attr( "style","display:none" );
-	  $( "#ourServices" ).attr( "style","display:block" );
+	  if(s>500){
+		  $( "#makeDocuments" ).attr( "style","display:none" );
+		  $( "#ourServices" ).attr( "style","display:block" );
+	  }
 	  $( "#makeDocumentsBlock1").css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 1000);
 	  $( "#makeDocumentsBlock2" ).attr( "style","display:none" );
 	});	
 	$( "#startResearchBlock" ).hover(function() {
-	  $( "#startResearch" ).attr( "style","display:block" );
-	  $( "#ourServices" ).attr( "style","display:none" );
+	  if(s>500){
+		  $( "#startResearch" ).attr( "style","display:block" );
+		  $( "#ourServices" ).attr( "style","display:none" );
+	  }
 	  $( "#startResearchBlock2" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 2000);
 	  // $( "#startResearchBlock2" ).css({ "display": "block", "width": "0" }).animate({ "width": "100%" }, 1000);
 	  $( "#startResearchBlock1" ).attr( "style","display:none" );
 	},function() {
-	  $( "#startResearch" ).attr( "style","display:none" );
-	  $( "#ourServices" ).attr( "style","display:block" );
+	  if(s>500){
+		  $( "#startResearch" ).attr( "style","display:none" );
+		  $( "#ourServices" ).attr( "style","display:block" );
+	  }
 	  $( "#startResearchBlock1" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 2000);
 	  // $( "#startResearchBlock1" ).css({ "display": "block", "width": "0" }).animate({ "width": "100%" }, 1000);
 	  $( "#startResearchBlock2" ).attr( "style","display:none" );
