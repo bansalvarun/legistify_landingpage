@@ -487,6 +487,7 @@ a:focus {
     -o-background-size: cover;
 }
 .myfooter{
+    
     width: 100%;
     background-color: #232C3C;
     /*background: url(../img/dark.png) no-repeat center center scroll;*/
@@ -507,6 +508,7 @@ a:focus {
     padding: 50px 0;
 */    color: #fff;
     background-color: #232C3C;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
