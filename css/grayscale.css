@@ -86,7 +86,7 @@ a:focus {
 }
 .superdark{
     font-variant: bold;
-    font-weight: bold;
+    font-weight: 900;
     color:#000;
 }
 .light {
@@ -467,10 +467,10 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 3px solid #000;
+    border: 3px solid #fff;
     outline: 0;
-    color: #fff;
-    background-color: #000;
+    color: #232C3C;
+    background-color: #fff;
 }
 
 ul.banner-social-buttons {
