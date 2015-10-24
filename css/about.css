@@ -490,6 +490,7 @@ a:focus {
     
     width: 100%;
     background-color: #232C3C;
+    padding-top: 100px;
     /*background: url(../img/dark.png) no-repeat center center scroll;*/
 }
 .block{
