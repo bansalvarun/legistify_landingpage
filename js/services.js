@@ -9,10 +9,12 @@ function changeActivePag(i){
 }
 $(document).ready(function(){
 	var s = $( document ).width();
-	if(s<900)
+	if(s<900 )
 		$('.hideMeOnTablet').hide();
 	if(s<500)
 		$('.hideMeOnMobile').hide();
+	if(s<800 && s>500)
+		$('.hideMeOnyOnTablet').hide();
 	// $( "#findLawyersBlock" ).mouseover(function() {
 	//   $( "#findLawyers" ).attr( "style","display:block" );
 	//   $( "#ourServices" ).attr( "style","display:none" );

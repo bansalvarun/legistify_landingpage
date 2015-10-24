@@ -141,7 +141,9 @@ a:focus {
     margin-right:-20%;
     float:right;
 }
-
+.choose{
+    overflow:auto;
+}
 .nav-tab{
     font-size: 16px;
     margin: 0px 10px;
