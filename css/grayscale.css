@@ -81,6 +81,8 @@ a:focus {
 }
 .make2{
     color:#000;    
+    margin-left: 0px;
+    padding-left: 0px;
 }
 .superdark{
     font-variant: bold;

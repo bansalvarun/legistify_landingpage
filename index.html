@@ -91,6 +91,7 @@
                         </h4>
                         <br/>
                         <button class="btn btn-default btn-lg" >Explore More</button>
+                        <br/><br/>
             </div>
         </div>
 
@@ -104,23 +105,23 @@
     <section id="services" class="container content-section text-center" >
         <div class="row" align="right">
 
-            <div class = col-md-3 align="left" style="display:block" id="ourServices">
+            <div class = "col-md-3 hideMeOnMobile" align="left" style="display:block" id="ourServices">
                 <h3><span class="make2" >Our Services</span></h3>
                 <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;" >
                 <p>Kuch likhdo yahah bhi asfkjh ashklna sfaksfn asklfnas flasknf aslknas flaksnf asklfn </p>
             </div>
 
-            <div class = col-md-3 align="left" style="display:none" id="makeDocuments">
+            <div class =" col-md-3 hideMeOnMobile" align="left" style="display:none" id="makeDocuments">
                 <h3><span class="make2" >Make Documents</span></h3>
                 <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;" >
                 <p>Kuch likhdo yahah bhi asfkjh ashklna sfaksfn asklfnas flasknf aslknas flaksnf asklfn </p>
             </div>
-            <div class = col-md-3 align="left" style="display:none" id="startResearch">
+            <div class = "col-md-3 hideMeOnMobile" align="left" style="display:none" id="startResearch">
                 <h3><span class="make2" >Start Research</span></h3>
                 <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;" >
                 <p>Kuch likhdo yahah bhi asfkjh ashklna sfaksfn asklfnas flasknf aslknas flaksnf asklfn </p>
             </div>
-            <div class = col-md-3 align="left" style="display:none" id="findLawyers">
+            <div class =" col-md-3 hideMeOnMobile" align="left" style="display:none" id="findLawyers">
                 <h3><span class="make2" >Find Lawyers</span></h3>
                 <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;" >
                 <p>Kuch likhdo yahah bhi asfkjh ashklna sfaksfn asklfnas flasknf aslknas flaksnf asklfn </p>
@@ -175,12 +176,14 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Create Your Own Legal Documents</h2>
                     <div class="row" style="margin-top:90px">
-                        <div class="col-md-6" style="float:center;">
-                            <img src="img/document.png" height="100%" width="100%">
-                        </div>
-                        <div class="col-md-6" style="float:center;">
+                        <div class="col-md-6" style="float:right;">
                             <img src="img/document2.png" height="100%" width="100%">
-	                        <a class="btn btn-default btn-lg">Get Started</a>
+                            <a class="btn btn-default btn-lg">Get Started</a>
+                            <br/>
+                            <br/>
+                        </div>
+                        <div class="col-md-6 hideMeOnTablet" style="float:left;">
+                            <img src="img/document.png" height="100%" width="100%">
                         </div>
 
 <!--                         <div class="col-md-4" style="float:center;" >
@@ -225,22 +228,25 @@
 
     <!-- Contact Section -->
     <section id="testinomials" class="container content-section text-center">
-        <div class="row" >
-            <div class="col-md-6 " style="text-align:left;padding-left:0px"> 
+            <div class="col-md-6 hideMeOnMobile" style="text-align:left;padding-left:0px"> 
                 <h3 class="make2" style="padding-left:15px">PRESS MENTIONS</h3>
                 <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;padding-left:15px" >
                 <br/>
-                <div class="col-md-6" style="max-width:40%">
-                    <img src="img/dark.png"  >
-                    <img src="img/bg.png"  width="100%" height="2px">
-                    <p class="press">Aiming to accelerate the legal sphere for startups.<br/>
-                    <a>Read More</a></p>                
-                </div>
-                <div class="col-md-6" style="max-width:40%;" >
-                    <img src="img/dark.png">
-                    <img src="img/bg.png"  width="100%" height="2px">
-                    <p class="press">Legal Issues might spring up from within business or external business.<br/>
-                    <a>Read More</a></p>                
+                <div class="row" style="margin-left:0px;padding-left:0px">
+                    <div class="col-md-5 col-xs-5" style="">
+                        <img src="img/dark.png"  >
+                        <img src="img/bg.png"  width="100%" height="2px">
+                        <p class="press">Aiming to accelerate the legal sphere for startups.<br/>
+                        <a>Read More</a></p>                
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 col-xs-5 " >
+                        <img src="img/dark.png" style="">
+                        <img src="img/bg.png"  width="100%" height="2px">
+                        <p class="press">Legal Issues might spring up from within business or external business.<br/>
+                        <a>Read More</a></p>                
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
             <div class="col-md-6 "style="text-align:left">
@@ -341,7 +347,7 @@
                 <br/>
                 
                 </div>
-                <div class="col-md-2 " style="text-align:left;">
+                <div class="col-md-2 col-xs-2" style="text-align:left;">
                     <h4>Quick Links</h4>
                     <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;">
                     <ul style="list-style-type:none; text-decoration: none;display:inline">
@@ -358,7 +364,7 @@
                         <li>Team</li>
                     </ul>
                 </div>
-                <div class="col-md-2" style="text-align:left; ">
+                <div class="col-md-2 col-xs-2" style="text-align:left; ">
                     <h4>Legal Topics</h4>
                     <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;">
                     <ul style="list-style-type:none; text-decoration: none;display:inline">
@@ -367,7 +373,7 @@
                         <li>Document Writing</li>
                     </ul>
                 </div>
-                <div class="col-md-2" style="text-align:left; ">
+                <div class="col-md-2 col-xs-2" style="text-align:left; ">
                     <h4>Contact Us</h4>
                     <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;">
                     <ul style="list-style-type:none; text-decoration: none;display:inline">
