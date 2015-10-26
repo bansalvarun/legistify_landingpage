@@ -15,6 +15,9 @@ $(document).ready(function(){
 		$('.hideMeOnMobile').hide();
 	if(s<800 && s>500)
 		$('.hideMeOnyOnTablet').hide();
+	if(s<800 && s>500)
+		$('.floatCenterOnMobile').attr("style","float:center");
+	
 	// $( "#findLawyersBlock" ).mouseover(function() {
 	//   $( "#findLawyers" ).attr( "style","display:block" );
 	//   $( "#ourServices" ).attr( "style","display:none" );
