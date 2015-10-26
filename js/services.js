@@ -13,8 +13,16 @@ $(document).ready(function(){
 		$('.hideMeOnTablet').hide();
 	if(s<500)
 		$('.hideMeOnMobile').hide();
+	if(s<360){
+		$(".floatCenterOnMobileAll").attr("style","float:left;margin-left:15%");
+	}
 	if(s<800 && s>500)
 		$('.hideMeOnyOnTablet').hide();
+	// if(s<540 && s>375)b
+		// $(".floatCenterOnMobileAll").attr("style","float:left;margin-left:5%");
+	if(s<540 && s>350){
+		$('.floatCenterOnMobileLawyers').attr("style","float:left;margin-left:25%");
+	}
 	if(s<1000 && s>500)
 		$('.floatCenterOnMobile').attr("style","float:center");
 	

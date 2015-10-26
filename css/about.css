@@ -493,6 +493,14 @@ a:focus {
     padding-top: 100px;
     /*background: url(../img/dark.png) no-repeat center center scroll;*/
 }
+.myfooter ul {
+    font-size: 18px;
+}
+
+.myfooter ul li{
+    font-size: 18px;
+}
+
 .block{
     /*<img src="img/bg3.png" width="100%" height="120%">*/
     background-image: "../img/bg3.png";
@@ -503,6 +511,7 @@ a:focus {
     vertical-align: middle;
     float: left;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .footer-section {
 /*    width: 100%;
@@ -607,10 +616,14 @@ footer {
     padding-top: 100px;
 
 }
-
 footer p {
     margin: 10px;
+    font-size: 18px;
 }
+footer h2 {
+    font-size: 25px;
+}
+
 footer li{
     color: #BBBBBB;
 }
