@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$('.hideMeOnMobile').hide();
 	if(s<800 && s>500)
 		$('.hideMeOnyOnTablet').hide();
-	if(s<800 && s>500)
+	if(s<1000 && s>500)
 		$('.floatCenterOnMobile').attr("style","float:center");
 	
 	// $( "#findLawyersBlock" ).mouseover(function() {
