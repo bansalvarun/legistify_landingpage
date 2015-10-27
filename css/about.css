@@ -627,6 +627,22 @@ footer h2 {
 footer li{
     color: #BBBBBB;
 }
+footer a{
+    color: #BBBBBB;
+    margin-top:0;
+    padding: 0;
+    display: inline;
+
+}
+footer a:hover {
+    text-decoration: none;
+    color: #dedede;
+    margin-top:0;
+    padding: 0;
+    display: inline;
+
+}
+
 .marg{
     margin-left: 50px;
 }
