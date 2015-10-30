@@ -590,17 +590,17 @@ a:focus {
 }
 
 .btn-dark {
-    border: .165em solid #000;
-    color: #000;
+    border: .165em solid #232C3C;
+    color: #232C3C;
     background-color: transparent;
 }
 
 .btn-dark:hover,
 .btn-dark:focus {
-    border: .165em solid #000;
+    border: .165em solid #232C3C;
     outline: 0;
     color: #fff;
-    background-color: #000;
+    background-color: #232C3C;
 }
 
 ul.banner-social-buttons {
