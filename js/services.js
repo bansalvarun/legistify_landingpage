@@ -9,12 +9,17 @@ function changeActivePag(i){
 }
 $(document).ready(function(){
 	var s = $( document ).width();
-	if(s<900 )
+	if(s<900 ){
 		$('.hideMeOnTablet').hide();
+		$('.alignCenterOnMobile').attr("style","text-align:center;")
+	}
 	if(s<500)
 		$('.hideMeOnMobile').hide();
 	if(s<360){
 		$(".floatCenterOnMobileAll").attr("style","float:left;margin-left:18%");
+	}
+	if(s<500 & s>800){
+		$('.showOnlyOnTablet').hide();
 	}
 	if(s<800 && s>500)
 		$('.hideMeOnyOnTablet').hide();
@@ -39,14 +44,14 @@ $(document).ready(function(){
 	//   $( "#findLawyersBlock2" ).attr( "style","display:none" );
 	// });
 	$( "#findLawyersBlock" ).hover(function() {
-	  if(s>500){
+	  if(s>900){
 		  $( "#findLawyers" ).attr( "style","display:block" );
 		  $( "#ourServices" ).attr( "style","display:none" );
 	  }
 	  $( "#findLawyersBlock2" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 1000);
 	  $( "#findLawyersBlock1" ).attr( "style","display:none" );
 	},function(){
-	  if(s>500){
+	  if(s>900){
 		  $( "#findLawyers" ).attr( "style","display:none" );
 		  $( "#ourServices" ).attr( "style","display:block" );
 	  }
@@ -56,14 +61,14 @@ $(document).ready(function(){
 
 
 	$( "#makeDocumentsBlock" ).hover(function() {
-	  if(s>500){		
+	  if(s>900){		
 		  $( "#makeDocuments" ).attr( "style","display:block" );
 		  $( "#ourServices" ).attr( "style","display:none" );
 	  }
 	  $( "#makeDocumentsBlock2" ).css({ "display": "block", "opacity": "0" }).animate({ "opacity": "1" }, 1000);
 	  $( "#makeDocumentsBlock1" ).attr( "style","display:none" );
 	 },function() {
-	  if(s>500){
+	  if(s>900){
 		  $( "#makeDocuments" ).attr( "style","display:none" );
 		  $( "#ourServices" ).attr( "style","display:block" );
 	  }
@@ -71,7 +76,7 @@ $(document).ready(function(){
 	  $( "#makeDocumentsBlock2" ).attr( "style","display:none" );
 	});	
 	$( "#startResearchBlock" ).hover(function() {
-	  if(s>500){
+	  if(s>900){
 		  $( "#startResearch" ).attr( "style","display:block" );
 		  $( "#ourServices" ).attr( "style","display:none" );
 	  }
@@ -79,7 +84,7 @@ $(document).ready(function(){
 	  // $( "#startResearchBlock2" ).css({ "display": "block", "width": "0" }).animate({ "width": "100%" }, 1000);
 	  $( "#startResearchBlock1" ).attr( "style","display:none" );
 	},function() {
-	  if(s>500){
+	  if(s>900){
 		  $( "#startResearch" ).attr( "style","display:none" );
 		  $( "#ourServices" ).attr( "style","display:block" );
 	  }

@@ -54,6 +54,28 @@ a {
     transition: all .2s ease-in-out;
     font-weight: normal;
 }
+
+.modal{
+    color:#000;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.well{
+    border-radius: 0px;
+}
+.form-control{
+    border-radius: 0px;
+}
+.alert{
+    padding-left: 0px;
+    color: red;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
 .getstarted{
     margin-top: 45%;
     text-align: center;
@@ -343,6 +365,19 @@ a:focus {
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
 }
+.btn-dark {
+    border: .165em solid #232C3C;
+    color: #232C3C;
+    background-color: transparent;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    border: .165em solid #232C3C;
+    outline: 0;
+    color: #fff;
+    background-color: #232C3C;
+}
 
 @-webkit-keyframes pulse {    
     0% {
@@ -483,6 +518,35 @@ a:focus {
     outline: 0;
     color: #232C3C;
     background-color: #fff;
+}
+
+.btn-social {
+    border: .165em solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+    /*border: .165em solid #fff;*/
+    outline: 0;
+    color: white;
+    /*background-color: #fff;*/
+}
+.btn-social-dark {
+    margin-top: 10px;
+    width: 100%;
+    border: .165em solid #232C3C;
+    color: #232C3C;
+    background-color: transparent;
+}
+
+.btn-social-dark:hover,
+.btn-social-dark:focus {
+    /*border: .165em solid #fff;*/
+    outline: 0;
+    color: white;
+    /*background-color: #fff;*/
 }
 
 ul.banner-social-buttons {

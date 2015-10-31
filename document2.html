@@ -35,6 +35,116 @@
 
 
 </head>
+<!--Login  Modal  -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="login-overlay" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Login to Legistify</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="well" >
+                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Username/Email</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Remember login
+                                  </label>
+                              </div>
+                              <button type="submit" class="btn btn-dark " style="width:100%">Login</button>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                              <a href="#" class="btn btn-social-dark azm-facebook" style="width:100%;margin-top:10px"><i class="fa fa-facebook"></i> &nbsp;&nbsp;Log in with Facebook</a>
+                              <a href="#" class="btn btn-social-dark azm-google-plus" style="width:100%;margin-top:10px"><i class="fa fa-google-plus"></i>&nbsp;&nbsp; Sign in with Google+</a>
+                          </form>
+                      </div>                      
+                  </div>
+                  <div class="col-xs-6">
+                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> See all your orders</li>
+                          <li><span class="fa fa-check text-success"></span> Fast re-order</li>
+                          <li><span class="fa fa-check text-success"></span> Save your favorites</li>
+                          <li><span class="fa fa-check text-success"></span> Fast checkout</li>
+                          <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+                          <li><a href="/read-more/"><u>Read more</u></a></li>
+                      </ul>
+                      <p><a href="#signup-overlay" data-toggle="modal" data-target="#signup-overlay" class="btn btn-dark" data-dismiss="modal">Yes please, register now!</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>    
+<!-- Login modal over -->
+
+<!--Sign Up Modal  -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="signup-overlay" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Sign Up here</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/signup/" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="firstname" class="control-label">First Name</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you name" placeholder="Varun">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="lastname" class="control-label">Last Name</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you last name" placeholder="Bansal">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Username</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="bansalvarun">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Email</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you email" placeholder="varunbansal@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                            <div class="radio" style="text-align:left">
+                              <label style="font-weight:bold;padding-left:0px">I am a &nbsp;</label>
+                              <label><input type="radio" name="optradio">User</label>
+                              <label><input type="radio" name="optradio">Lawyer</label>
+                              <label><input type="radio" name="optradio">Law Student</label>
+                            </div>
+
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                              <button type="submit" class="btn btn-dark ">Sign Up</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>    
+<!-- Sign Up modal over -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Intro Header -->
@@ -67,7 +177,7 @@
                         <a class="page-scroll" href="research.html">RESEARCH</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">LOGIN</a>
+                        <a class="page-scroll"  href="#login-overlay" data-toggle="modal" data-target="#login-overlay">LOGIN</a>
                     </li>
                     <li >
                         <button class="btn btn-default forlawyers" style="margin-top:5px; margin-left:18px">For lawyers</button>
@@ -130,7 +240,7 @@
 
         </div>
         <div class="col-md-3" style="text-align:center">
-            <img src="img/doc.png" width="100%" height="100%">
+            <img src="img/doc.png" width="100%" height="150%">
             <div class="row" style="display:inline;" >
             <div class="col-md-10 " style="padding:0;">
               <div class="progress">
@@ -146,8 +256,6 @@
 
 
 
-
-
     <!-- Footer -->
     <footer >
         <div class="myfooter">
@@ -156,17 +264,18 @@
                 <div class="col-md-4 vcenter" >
                     <h2 style="text-align:left;">legistify</h2>
                     <p style="text-align:left;margin-left:0px">this is about something I don't know, but I am just blabing here ahshash</p>
-                    <a href="#" class="btn azm-social azm-size-32 azm-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="btn azm-social azm-size-32 azm-google-plus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="btn azm-social azm-size-32 azm-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="btn azm-social azm-size-32 azm-linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" class="btn azm-social azm-size-32 azm-slideshare"><i class="fa fa-slideshare"></i></a>
+                    <button href="#" class="btn btn-social azm-facebook" ><i class="fa fa-facebook"></i></button>
+                    <button href="#" class="btn btn-social azm-google-plus"><i class="fa fa-google-plus"></i></button>
+                    <button href="#" class="btn btn-social azm-twitter"><i class="fa fa-twitter"></i></button>
+                    <button href="#" class="btn btn-social azm-linkedin"><i class="fa fa-linkedin"></i></button>
+                    <button href="#" class="btn btn-social azm-slideshare"><i class="fa fa-slideshare"></i></button>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
                 </div>
                 <div class="col-md-2 " style="text-align:left;">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <br/>
                 <br/>
                 <br/>
@@ -205,12 +314,8 @@
                 </div>
             </div>  
             
-            <HR WIDTH="100%" >
-            <div class="col-md-6" style="text-align:left;padding-left:0px; margin-left:0px">
-                <p style="font-size:15px;margin-left:0px">Copyright 2014  All rights registered by Legistify</p>
-            <br/>
-            </div>
-            <div class="col-md-6" style="margin-left:0px; padding-left:0px;text-align:right">
+            <HR WIDTH="200%" style="margin-left:-50%;border-color:#F2F2F2" >
+            <div class="col-md-6" style="margin-left:0px; padding-left:0px;text-align:left;float:left;">
                 <div class="col-xs-4 " style="margin-left:0px; padding-left:0px">
                     <p style="font-size:15px">Terms And Condition</p>
                 </div>
@@ -221,10 +326,17 @@
                     <p style="font-size:15px">Privacy Policy</p>
                 </div>
             </div>
+            <div class="col-md-6 alignCenterOnMobile" style="text-align:right;float:right">
+                <p style="font-size:15px;margin-left:0px">&#169;&nbsp;Legistify 2015</p>
+            <br/>
+            </div>
 
         </div>
         </div>
     </footer>
+
+
+
 
     <!-- jQuery -->
      <script src="js/jquery.js"></script>

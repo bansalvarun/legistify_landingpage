@@ -15,10 +15,13 @@
                     searchBox.addClass('searchbox-open');
                     inputBox.focus();
                     isOpen = true;
+                    $('.changeColor').attr("style", "color:#232C3C")
                 } else {
                     searchBox.removeClass('searchbox-open');
                     inputBox.focusout();
                     isOpen = false;
+                    $('.changeColor').attr("style", "color:white")
+
                 }
             });  
              submitIcon.mouseup(function(){
@@ -32,7 +35,9 @@
                         $('.searchbox-icon').css('display','block');
                         submitIcon.click();
                     }
+
                 });
+
         });
             function buttonUp(){
                 var inputVal = $('.searchbox-input').val();
