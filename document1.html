@@ -35,6 +35,26 @@
 
 
 </head>
+<!--Preview  Modal  -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="preview" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Preview</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row" align="center">
+                <div class="col-md-12" align="center" style="padding-right:30px">
+                  <img src="img/doc.png" width="100%">
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>    
+<!-- Preview modal over -->
+
 <!--Login  Modal  -->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" id="login-overlay" role="dialog" aria-labelledby="mySmallModalLabel">
   <div class="modal-dialog ">
@@ -214,7 +234,7 @@
 
         </div>
         <div class="col-md-2 hideMeOnTablet" style="text-align:center;" >
-            <img src="img/doc.png" width="80%" height="100%">
+            <a href="#login-overlay" data-toggle="modal" data-target="#preview"><img src="img/doc.png" width="80%" height="100%"></a>
             <div class="row" style="margin-top:20px">
                 <span style="color:black;font-size:15px">
                     <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float:left">144</span>  
