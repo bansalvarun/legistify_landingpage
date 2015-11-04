@@ -636,9 +636,12 @@ a:focus {
     /*background-color: #fff;*/
 }
 .btn-social-dark {
+    margin-top: 10px;
+    width: 100%;
     border: .165em solid #232C3C;
     color: #232C3C;
     background-color: transparent;
+
 }
 
 .btn-social-dark:hover,

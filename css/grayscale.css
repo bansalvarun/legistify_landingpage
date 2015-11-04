@@ -126,6 +126,7 @@ a:focus {
 .press{
     font-size: 15px;
     color:#232C3C;
+    text-align: left;
     font-weight: bold;
 }
 .row{
