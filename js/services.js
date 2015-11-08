@@ -66,4 +66,9 @@ $(document).ready(function(){
 	  // $( "#startResearchBlock1" ).css({ "display": "block", "width": "0" }).animate({ "width": "100%" }, 1000);
 	  $( "#startResearchBlock2" ).attr( "style","display:none" );
 	});
+
+	$(".openSignUp").click(function(){
+		$(".loginForm").attr("style","display:none");
+		$(".signupForm").attr("style","display:block");
+	});
 });

@@ -36,18 +36,18 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
 <!--Login  Modal  -->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" id="login-overlay" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog ">
-    <div class="modal-content">
+  <div class="modal-dialog loginForm" >
+    <div class="modal-content ">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
               <h4 class="modal-title" id="myModalLabel">Login to Legistify</h4>
           </div>
           <div class="modal-body">
               <div class="row">
-                  <div class="col-xs-6">
+                  <div class="col-sm-6">
                       <div class="well" >
                           <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
                               <div class="form-group">
@@ -65,12 +65,12 @@
                               <div align="right" style="margin-top:2px"><a style="color:black;cursor:pointer;font-size:12px">Forget Password?</a></div>
                               <div align="center" style="margin-top:5px"><b>OR</b></div>
                               <a href="#" class="btn btn-social-dark azm-facebook" ><i class="fa fa-facebook"></i> &nbsp;&nbsp;Log in with Facebook</a>
-                              <div align="center" style="margin-top:5px"><b>OR</b></div>
+                              <!-- <div align="center" style="margin-top:5px"><b>OR</b></div> -->
                               <a href="#" class="btn btn-social-dark azm-google-plus"><i class="fa fa-google-plus"></i>&nbsp;&nbsp; Sign in with Google+</a>
                           </form>
                       </div>                      
                   </div>
-                  <div class="col-xs-6">
+                  <div class="col-sm-6">
                       <p class="lead">Register now for <span class="text-success">FREE</span></p>
                       <ul class="list-unstyled" style="line-height: 2">
                           <li><span class="fa fa-check "></span> Affordable & Quick Legal Docs</li>
@@ -79,19 +79,20 @@
                           <li><span class="fa fa-check "></span> One Stop Legal Solution.</li>
                           <li><a href="about.html"><u>Read more</u></a></li>
                       </ul>
-                      <p><a href="#signup-overlay" data-toggle="modal" data-target="#signup-overlay" class="btn btn-dark" data-dismiss="modal">Yes please, register now!</a></p>
+                      <!-- <p><a href="#signup-overlay" data-toggle="modal" data-target="#signup-overlay" class="btn btn-dark" data-dismiss="modal">Yes please, register now!</a></p> -->
+                      <p><a class="btn btn-dark openSignUp" >Yes please, register now!</a></p>
                   </div>
               </div>
           </div>
       </div>
   </div>
-</div>    
-<!-- Login modal over -->
+<!-- </div>     -->
 
+<!-- Login modal over -->
 <!--Sign Up Modal  -->
-<div class="modal fade bs-example-modal-sm" tabindex="-2" id="signup-overlay" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+<!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" id="signup-overlay" role="dialog" aria-labelledby="mySmallModalLabel"> -->
+  <div class="modal-dialog modal-lg signupForm" style="display:none">
+    <div class="modal-content ">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
               <h4 class="modal-title" id="myModalLabel">Sign Up here</h4>
@@ -144,8 +145,10 @@
   </div>
 </div>    
 <!-- Sign Up modal over -->
-
-
+</div>
+<!-- modalover -->
+  
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Intro Header -->
     <header class="intro" >
 
@@ -277,7 +280,7 @@
             </div> -->
 
 
-            <div class="col-md-3 col-sm-6 col-xs-6" style="max-height:200px;overflow:hidden;" id="ourServices">
+<!--             <div class="col-md-3 col-sm-6 col-xs-6" style="max-height:200px;overflow:hidden;" id="ourServices">
                 <div align="left">
                 <h3><span class="make2" >OUR SERVICES</span></h3>
                 <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;margin-left:0px" >
@@ -306,43 +309,29 @@
                 <p>Hiring the right lawyer is no more a problem. Search, meet and hire experienced professionals on our platform.”</p>                
 
             </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-6" style="height:200px;margin-top:50px;" id="makeDocumentsBlock">
-                <div id="makeDocumentsBlock1" style="display:block">
-                    <img src="img/docs.png">
-                    <p><span class="make">MAKE</span><br/><span class="superdark">DOCUMENTS</span></p>
-                </div>                
-                <div id="makeDocumentsBlock2" style="display:none">
-                    <button class="btn btn-default getstarted" >Get started</button>
-                    <img src="img/getstarted.png" width="100%" height="200px" >
-                    <!-- <p style="background:#232C3C"><span class="make" ></span><br/><span class="superdark" style="visibility:hidden">afaf</span></p> -->
-                </div>
+ -->
+            <div class="col-md-12" align="center">
+                <h2><span class="make2" >OUR SERVICES</span></h2>
+                <img src="img/dark.png"  width="80px" height="3px" style="margin-top:-20px;" >
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6" style="height:200px;margin-top:50px" id="startResearchBlock">
-                <div id="startResearchBlock1" style="display:block">
-                    <img src="img/research.png" >
-                    <p><span class="make">START</span><br/><span class="superdark">RESEARCH</span></p>
-                </div>
-                <div id="startResearchBlock2" style="display:none">
-                    <button class="btn btn-default getstarted">Get started</button>
-                    <img src="img/getstarted.png" width="100%" height="200px">
-                    <!-- <p style="background:#232C3C"><span class="make" ></span><br/><span class="superdark" style="visibility:hidden">afaf</span></p> -->
-                </div>
-                
+            <div class="col-md-12">            
+              <div class="col-md-2"></div>
+              <div class="col-md-2 col-sm-4 col-xs-6 makeDocumentsBlock" style="height:200px;margin-top:50px;" >
+                  <img src="img/docs.png">
+                  <p><span class="make">Make</span><br/><span class="superdark">DOCUMENTS</span></p>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-2 col-sm-4 col-xs-6 makeDocumentsBlock" style="height:200px;margin-top:50px" id="startResearchBlock">
+                  <img src="img/research.png" >
+                  <p><span class="make">Start</span><br/><span class="superdark">RESEARCH</span></p>
+              </div>
+              <div class="col-md-1 col-xs-3"></div>
+              <div class="col-md-2 col-sm-4 col-xs-6 makeDocumentsBlock" style="height:200px;margin-top:50px"id="findLawyersBlock">
+                  <img src="img/lawyers.png" >
+                  <p><span class="make">Find</span><br/><span class="superdark">LAWYERS</span></p>
+              </div>
+              <div class="col-md-2 col-xs-3"></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6" style="height:200px;margin-top:50px"id="findLawyersBlock">
-                <div id="findLawyersBlock1" style="display:block">
-                    <img src="img/lawyers.png" >
-                    <p><span class="make">FIND</span><br/><span class="superdark">LAWYERS</span></p>
-                </div>                
-                <div id="findLawyersBlock2" style="display:none;">
-                    <button class="btn btn-default getstarted">Get started</button>
-                    <img src="img/getstarted.png" width="100%" height="200px">
-                    <!-- <p style="background:#232C3C"><span class="make" ></span><br/><span class="superdark" style="visibility:hidden">afaf</span></p> -->
-                </div>
-
-            </div>
-
 
 
         
@@ -429,7 +418,7 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
-                <div class="row hideMeOnMobile" style="margin-left:0px;padding-left:0px;text-align:center " align="center">
+<!--                 <div class="row hideMeOnMobile" style="margin-left:0px;padding-left:0px;text-align:center " align="center">
                     <div class="col-md-3 col-sm-3"></div>
                     <div class="col-md-6 col-sm-6 col-xs-12" style="">
                         <img src="img/yef.jpg"  style="max0-height:150px;width:100%">
@@ -438,7 +427,7 @@
                         <a>Read More</a></p>                
                     </div>
                     <div class="col-md-3 col-sm-3"></div>
-                </div>
+                </div> -->
             </div>
             <div class="col-md-6 "style="text-align:left">
                 <h3 class="make2">TESTIMONIALS</h3>
@@ -524,8 +513,18 @@
         <div class="footer-section container content-section text-left" >
             <div class="row" style="padding-left:0px;margin-top:-50px">
                 <div class="col-md-4 vcenter" >
-                    <h2 style="text-align:left;">legistify</h2>
-                    <p style="text-align:left;margin-left:0px">Online legal facilitation service providers for legal agreements, basic legal research as well as getting connected to a legal professional.</p>
+                    <h2 style="text-align:left;margin-bottom:0px">legistify</h2>
+                    <!-- <h4>Contact Us</h4> -->
+                    <!-- <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;"> -->
+                    <ul style="list-style-type:none; text-decoration: none;display:inline">
+                        <li><b>Address: </b></li>
+                        <li> B-37 Ground floor, Polyplex Tower, Noida- Sector 1</li>
+                        <!-- <li><br/></li> -->
+                        <li><b>Phone:</b> +919024456014</li>
+                        <!-- <li><br/></li> -->
+                        <li><b>Email:</b> contact@legistify.com</li>
+                        <li><br/></li>
+                    </ul>
                     <button href="#" class="btn btn-social azm-facebook" ><i class="fa fa-facebook"></i></button>
                     <button href="#" class="btn btn-social azm-google-plus"><i class="fa fa-google-plus"></i></button>
                     <button href="#" class="btn btn-social azm-twitter"><i class="fa fa-twitter"></i></button>
@@ -546,7 +545,7 @@
                 </div>
                 <div class="col-md-2 col-sm-3 col-xs-5" style="text-align:left;">
                     <h4>Quick Links</h4>
-                    <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;">
+                    <img src="img/bg.png"  width="50px" height="2px" style="margin-top:-30px;">
                     <ul style="list-style-type:none; text-decoration: none;display:inline">
                         <li><a href="about.html">About</a></li>
                         <li><a href="team.html">Team</a></li>
@@ -560,30 +559,34 @@
                 </div>
 
                 <div class="col-md-3 col-sm-5 col-xs-7" style="text-align:left; ">
-
                     <h4>Most Popular</h4>
-                    <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;">
+                    <div class="col-xs-12" style="padding-left:0px;height:2px">
+                    <img src="img/bg.png"  width="50px" height="2px" style="margin-top:-30px;">
+                    </div>
+                    <div class="col-xs-6" style="padding-left:0px">
+                      <ul style="list-style-type:none; text-decoration: none;display:inline">
+                        <li>Employment Contract</li>
+                        <li>Trademark Assignment</li>
+                        <li>Copyright Assignment</li>
+                        <li>Non-Disclosure</li>
+                        <li>Power of attorney</li>
+                        <li>Lease</li>
+                      </ul>                      
+                    </div>
+                    <div class="col-xs-6">
                     <ul style="list-style-type:none; text-decoration: none;display:inline">
-                      <li>
-                        Employment Contract, Trademark Assignment, Copyright Assignment, Non-Disclosure, Power of attorney, Lease, Sale Deed, Arbitration Agreement, Will, Graphic  designer agreement, merchant agreement
-                      </li>
-                      <li><br/></li>
-                      <li><br/></li>
-                    </ul>
+                        <li>Sale Deed</li>
+                        <li>Arbitration Agreement</li>
+                        <li>Will</li>
+                        <li>Graphic  designer agreement</li>
+                        <li>merchant agreement</li>
+                      </ul>                      
+                    </div>
+
                  </div>
                 <div class="col-md-2 col-sm-4 col-xs-6" style="text-align:left; ">
-                    <h4>Contact Us</h4>
-                    <img src="img/bg.png"  width="80px" height="2px" style="margin-top:-30px;">
-                    <ul style="list-style-type:none; text-decoration: none;display:inline">
-                        <li><b>Address: </b></li>
-                        <li> B-37 Ground floor, Polyplex Tower, Noida- Sector 1</li>
-                        <!-- <li><br/></li> -->
-                        <li><b>Phone:</b> +919024456014</li>
-                        <!-- <li><br/></li> -->
-                        <li><b>Email:</b> contact@legistify.com</li>
-                        <li><br/></li>
-
-                    </ul>
+                    <h4>Legal Topics</h4>
+                    <img src="img/bg.png"  width="50px" height="2px" style="margin-top:-30px;">
                 </div>
 
             </div>  

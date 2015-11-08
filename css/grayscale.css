@@ -76,19 +76,6 @@ a {
 }
 
 
-.getstarted{
-    margin-top: 80px;
-    text-align: center;
-    position:absolute; 
-    z-index:1000; 
-    /*float: clear;*/
-    left: 20%;
-    width:60%;
-    /*margin-left: 5%;*/
-    /*margin-right: 5%; */
-    /*margin-left:7%;*/
-    /*margin-right:8%*/
-}
 .owl-page .active{
 
 }
@@ -102,6 +89,61 @@ a:focus {
   margin: 0 0;
   width: 100%;
   padding-right: -50px;
+}
+.makeDocumentsBlock{
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+.makeDocumentsBlock:before{
+    /*display: none;*/
+    visibility: hidden;
+}
+.makeDocumentsBlock:after{
+    height: 0;
+    background-color: #232c3c;
+    content: "";
+    visibility: hidden;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    transition: height 0.3s ;
+    margin-top: -220px;
+    margin-left: -80px;
+}
+.makeDocumentsBlock:hover:after{
+    content: "";
+    height: 100%;
+    visibility: visible;
+    /*display: block;*/
+    z-index: 1;
+    margin-top: -220px;
+    margin-left: -80px;
+    width: 100%;
+    position: absolute;
+}
+.makeDocumentsBlock button:after button{
+    /*position: relative;*/
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    /*visibility: visible;*/
+    z-index: 1;
+    /*margin-top: -220px;*/
+    /*margin-left: -100px;*/
+    /*color: black;*/
+    /*z-index: 1;*/
+}
+.getstarted:after{
+    display: block;
+    visibility: hidden;
+    z-index: -1;
+    margin-top: 80px;
+    text-align: center;
+    position:absolute; 
+    z-index:1000; 
+    left: 20%;
+    width:60%;
 }
 
 .make{
@@ -448,7 +490,8 @@ a:focus {
 }
 
 .myfooter ul li{
-    font-size: 18px;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 .block{
     /*<img src="img/bg3.png" width="100%" height="120%">*/
