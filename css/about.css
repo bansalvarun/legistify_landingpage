@@ -761,6 +761,49 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 }
+.lightCheckOut h7{
+    font-size: 19px;
+    color: #232c3c;
+    font-weight: 700;
+}
+.darkCheckOut {
+    margin-top: 10px;
+    background-color: #232c3c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.darkCheckOut h7{
+    font-size: 19px;
+    color: white;
+    font-weight: 700;
+}
+.form-horizontal .control-label{
+    color: black;
+    text-align: left;
+}
+.form-group{
+    text-align: left;
+
+}
+.form-control{
+    outline: none;
+    /*border: none !important;*/
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important; 
+    box-shadow: none !important;
+    border-width: 2px;
+    border-color: #d3d3d3; 
+}
+
+.form-horizontal h4{
+    color:black;
+}
+.form-control:hover,
+.form-control:focus{
+    /*box-shadow: 10px 10px 5px #888888;;*/
+    border-color: #232c3c;
+    border-width: 2px;
+} 
 
 footer {
     padding-top: 100px;
