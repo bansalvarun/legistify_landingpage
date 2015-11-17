@@ -46,7 +46,7 @@
           <div class="modal-body">
               <div class="row" align="center">
                 <div class="col-md-12" align="center" style="padding-right:30px">
-                  <img src="img/doc.png" width="100%">
+                  <img src="img/thumb.png" width="100%">
                 </div>
               </div>
           </div>
@@ -217,56 +217,82 @@
     <!-- all Section -->
     <section id="all" class="container content-section text-left" >
         <div class="col-md-9" >
-        <div class="row" align="left" style="margin-bottom:50px; margin-left:0px;padding-left:0px;">
+        <div class="row" align="left" style="; margin-left:0px;padding-left:0px;">
             <div style="float:left">
                 <h2 style="color:black;" >Job Offer and Employment Contract</h2>
             </div>
         </div>
-
-
         <div >
           <ul class="nav nav-tabs nav-justified" role="tablist" >
             <li role="presentation" class="active"><a href="#tabOne" aria-controls="home" role="tab" data-toggle="tab">TAB DESC 1</a></li>
-            <!-- <li style="font-size:30px;text-align:center;" >|</li> -->
             <li role="presentation"><a href="#tabTwo" aria-controls="profile" role="tab" data-toggle="tab">TAB DESC 2</a></li>
             <li role="presentation"><a href="#tabThree" aria-controls="messages" role="tab" data-toggle="tab">TAB DESC 3</a></li>
             <li role="presentation"><a href="#tabFour" aria-controls="settings" role="tab" data-toggle="tab">TAB DESC 4</a></li>
           </ul>
 
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="tabOne">
-                <br/><br/><br/><br/><br/>
+          <div class="tab-content ques">
+                <br/>
+            <div role="tabpanel" class="tab-pane active" id="tabOne" >
+                <ol>
+                  <li>Purpose of Renting<br/>
+                    <button class="btn btn-dark" style="padding: 0 20px;margin-top:10px">Residential</button>
+                    <button class="btn btn-light" style="padding: 0 20px;margin-top:10px">Commercial</button>
+                    <HR style="border: .10em solid grey;"></HR>
+                  </li>
+                  <li>My Name is 
+                    <input type="text" class="quesFormInput">. I am a student.
+                    <HR style="border: .10em solid grey;"></HR>
+                  </li>
+                  <li>You are a &nbsp
+                    <label class="checkbox-inline"><input type="checkbox" value="">Student</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Worker</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Liability</label>
+                    <input type="text" class="quesFormInput">. 
+                    <HR style="border: .10em solid grey;"></HR>
+                  </li>
+                  <li>Sex &nbsp
+                      <label><input type="radio" name="optradio">&nbsp Male</label>
+                      <label><input type="radio" name="optradio">&nbsp Female</label>
+                    <HR style="border: .10em solid grey;"></HR>
+                  </li>
+                  <li>Sex &nbsp
+                      <label><input type="radio" name="optradio">&nbsp Male</label>
+                      <label><input type="radio" name="optradio">&nbsp Female</label>
+                    <HR style="border: .10em solid grey;"></HR>
+                  </li>
+
+                </ol>
             </div>
             <div role="tabpanel" class="tab-pane" id="tabTwo">
-                <br/><br/><br/><br/><br/>
             </div>
             <div role="tabpanel" class="tab-pane" id="tabThree">
-                <br/><br/><br/><br/><br/>
             </div>
             <div role="tabpanel" class="tab-pane" id="tabFour">
-                <br/><br/><br/><br/><br/>
             </div>
             <HR style="border: 1px solid #232C3C">
           </div>
-          <div align="right">
-
-            <button class="btn btn-dark" style="width:20%;margin-right:2%">Previous</button>
-            <button class="btn btn-dark" style="width:20%">Next</button>
+          <div  style="float:left" class="col-md-9">
+            <button class="btn btn-dark" style="padding-right:5%; padding-left:5%">Back</button>
+            <button class="btn btn-dark" style="padding-right:5%; padding-left:5%">Save and Next</button>
+          </div>
+          <div  style="float:right" class="col-md-3" align="right">
+            <button class="btn btn-dark" style="padding-right:5%; padding-left:5%">Confirm</button>
           </div>
         </div>
 
         </div>
-        <div class="col-md-3" style="text-align:center">
-            <a href="#login-overlay" data-toggle="modal" data-target="#preview"><img src="img/doc.png" width="100%" height="150%">Click to Enlarge<br/></a>
+        <div class="col-md-3" style="text-align:center;">
+            <div style="border: 1px solid #232c3c">
+            <a  data-toggle="modal" data-target="#preview" style=""><img src="img/thumb.png" width="100%" height="150%"><br/><br/></a>
+            </div>
             <div class="row" style="display:inline;" >
             <div class="col-md-10 " style="padding:0;">
               <div class="progress">
                   <div class="progress-bar" style="width: 50%;"></div>
                 </div>
             </div>
-            <div class="col-md-2">50%</div>
+            <div class="col-md-2"><span style="color:#232c3c"><b>50%</b></span> </div>
             </div>
-            <div ><button class="btn btn-dark" style="width:50%">Confirm</button></div>
         </div>
 
     </section>
